@@ -12,7 +12,7 @@ N = 4000;
 
 leftedge1 = 0.5;
 rightedge1 = 1.5;
-amplitude1 = -2.8;
+amplitude1 = 2;
 
 leftedge2 = -1.4;
 rightedge2 = -0.8;
@@ -21,6 +21,10 @@ amplitude2 = 1.4;
 tvec=linspace(-10,10,N);
 
 mt = message_signal(tvec,leftedge1,rightedge1,amplitude1,leftedge2,rightedge2,amplitude2);
+%mt = message_signal_quadratic(tvec,leftedge1,rightedge1,amplitude1,leftedge2,rightedge2,amplitude2);
+%mt = message_signal_triangle(tvec,leftedge1,rightedge1,amplitude1,leftedge2,rightedge2,amplitude2);
+
+
 
 figure
 subplot(211)
